@@ -5,7 +5,8 @@ app.use(express.json()); // Parse JSON bodies
 let todos = [
   { id: 1, task: 'Learn Node.js', completed: false },
   { id: 2, task: 'Build CRUD API', completed: false },
-  { id: 3, task: 'submit assignment', completed: false }
+  { id: 3, task: 'submit assignment', completed: false },
+  { id: 4, task: 'review code', completed: false }
 ];
 
 // GET All – Read
