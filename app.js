@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors()); // Allow CORS from any origin
 app.use(express.json()); // Parse JSON bodies
+const PORT = process.env.PORT || 3000;
 
 let todos = [
   { id: 1, task: "Learn Node.js", completed: true },
@@ -74,5 +75,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Server error!" });
 });
 
-const PORT = 3002;
 app.listen(PORT, () => console.log(`Server on port ${PORT}`));
